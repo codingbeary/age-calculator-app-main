@@ -17,6 +17,13 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Age calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -32,17 +39,20 @@
   </head>
   <body>
     <main>
-      <div class="flex-container card">
-        <form>
-          <label for="number">Day</label>
-          <input type="number" placeholder="DD" />
-          <label for="number">Month</label>
-          <input type="number" placeholder="MM" />
-          <label for="number">Year</label>
-          <input type="number" placeholder="YYYY" />
-          <input type="submit" class="btn btn-primary" />
-        </form>
-        -- years -- months -- days
+      <div class="flex-container">
+        <div class="card">
+          <form>
+            <label for="number">Day</label>
+            <input type="number" placeholder="DD" />
+            <label for="number">Month</label>
+            <input type="number" placeholder="MM" />
+            <label for="number">Year</label>
+            <input type="number" placeholder="YYYY" />
+            <input type="submit" class="btn btn-primary" />
+          </form>
+
+          -- years -- months -- days
+        </div>
       </div>
     </main>
     <footer>
