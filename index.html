@@ -42,16 +42,38 @@
       <div class="flex-container">
         <div class="card">
           <form>
-            <label for="number">Day</label>
-            <input type="number" placeholder="DD" />
-            <label for="number">Month</label>
-            <input type="number" placeholder="MM" />
-            <label for="number">Year</label>
-            <input type="number" placeholder="YYYY" />
-            <input type="submit" class="btn btn-primary" />
+            <div class="inputs-container">
+              <div class="input-element">
+                <label for="day">DAY</label>
+                <input type="number" placeholder="DD" id="day" class="date" />
+              </div>
+              <div class="input-element">
+                <label for="month">MONTH</label>
+                <input type="number" placeholder="MM" id="month" class="date" />
+              </div>
+              <div class="input-element">
+                <label for="number">YEAR</label>
+                <input type="number" placeholder="YYYY" class="date" />
+              </div>
+            </div>
+            <div class="button-container">
+              <hr />
+              <button type="submit">
+                <img
+                  src="./assets/images/icon-arrow.svg"
+                  alt="icon-arrow"
+                  class="icon-arrow"
+                />
+              </button>
+            </div>
           </form>
-
-          -- years -- months -- days
+          <div class="years result">
+            <span>-- </span>years
+            <br />
+            <span>-- </span> months
+            <br />
+            <span>-- </span> days
+          </div>
         </div>
       </div>
     </main>
