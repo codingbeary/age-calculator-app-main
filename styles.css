@@ -25,6 +25,7 @@ label {
 }
 input {
   margin-right: 32px;
+  text-align: center;
 }
 label {
   color: #716f6f;
@@ -57,14 +58,23 @@ button {
   height: 96px;
   width: 96px;
 }
-.result {
-  font-size: 90px;
+
+span {
+  color: #854dff;
+}
+.years-result {
+  font-size: 104px;
   font-weight: 800;
   font-style: italic;
   position: relative;
   top: -50px;
   padding: 20px;
+  line-height: 1.2;
 }
-span {
-  color: #854dff;
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

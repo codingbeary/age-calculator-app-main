@@ -24,24 +24,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="age-calculator.js"></script>
     <title>Frontend Mentor | Age calculator app</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main>
       <div class="flex-container">
         <div class="card">
-          <form>
+          <form onsubmit="calculateAge(); return false;">
             <div class="inputs-container">
               <div class="input-element">
                 <label for="day">DAY</label>
@@ -53,7 +43,12 @@
               </div>
               <div class="input-element">
                 <label for="number">YEAR</label>
-                <input type="number" placeholder="YYYY" class="date" />
+                <input
+                  type="number"
+                  placeholder="YYYY"
+                  class="date"
+                  id="year"
+                />
               </div>
             </div>
             <div class="button-container">
@@ -67,12 +62,12 @@
               </button>
             </div>
           </form>
-          <div class="years result">
-            <span>-- </span>years
+          <div class="years-result">
+            <span id="age-years">-- </span>years
             <br />
-            <span>-- </span> months
+            <span id="age-months">-- </span> months
             <br />
-            <span>-- </span> days
+            <span id="age-days">-- </span> days
           </div>
         </div>
       </div>
