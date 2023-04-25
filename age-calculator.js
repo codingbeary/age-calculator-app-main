@@ -47,8 +47,3 @@ function calculateAge() {
     document.getElementById("age-days").textContent = age.days;
   }
 }
-
-function clearErrorMessages(inputElement) {
-  const errorMessages = inputElement.querySelectorAll("p");
-  errorMessages.forEach((errorMessage) => errorMessage.remove());
-}
