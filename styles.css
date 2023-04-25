@@ -68,6 +68,9 @@ hr {
   width: 100%;
   color: #dcdcdc;
 }
+.mobile-only {
+  display: none;
+}
 .button-container {
   display: flex;
   align-items: center;
@@ -103,4 +106,58 @@ span {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media (max-width: 960px) {
+  .card {
+    width: 343px;
+    height: 486px;
+    border-bottom-right-radius: 100px;
+    padding: 48px 24px;
+  }
+  .inputs-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .date {
+    width: 87px;
+    height: 54px;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 20px;
+  }
+  input {
+    margin: 5px;
+    font-size: 20px;
+  }
+  label {
+    font-size: 12px;
+  }
+  .years-result {
+    font-size: 54px;
+    padding: 0px;
+
+    margin-top: 32px;
+  }
+  button {
+    height: 64px;
+    width: 64px;
+  }
+  img {
+    height: 24px;
+    width: 24px;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 32px 0px;
+  }
+  .error {
+    font-size: 10px;
+  }
+  .date.error {
+    font-size: 20px;
+  }
 }
