@@ -49,6 +49,21 @@ label {
   font-size: 32px;
   font-weight: 700;
 }
+.error {
+  color: #ff5959;
+  font-style: italic;
+  font-size: 14px;
+}
+.date.error {
+  border: 1px solid #ff5959;
+  color: black;
+  font-style: normal;
+  font-size: 32px;
+}
+.label-error {
+  color: #ff5959;
+}
+
 hr {
   width: 100%;
   color: #dcdcdc;

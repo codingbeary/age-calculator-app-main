@@ -34,21 +34,24 @@
           <form onsubmit="calculateAge(); return false;">
             <div class="inputs-container">
               <div class="input-element" id="day-input-element">
-                <label for="day">DAY</label>
+                <label for="day" id="label-error">DAY</label>
                 <input type="number" placeholder="DD" id="day" class="date" />
+                <span class="error" id="day-error"></span>
               </div>
               <div class="input-element" id="month-input-element">
-                <label for="month">MONTH</label>
+                <label for="month" id="label-error">MONTH</label>
                 <input type="number" placeholder="MM" id="month" class="date" />
+                <span class="error" id="month-error"></span>
               </div>
               <div class="input-element" id="year-input-element">
-                <label for="number">YEAR</label>
+                <label for="number" id="label-error">YEAR</label>
                 <input
                   type="number"
                   placeholder="YYYY"
                   class="date"
                   id="year"
                 />
+                <span class="error" id="year-error"></span>
               </div>
             </div>
             <div class="button-container">
